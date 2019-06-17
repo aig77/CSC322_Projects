@@ -1,0 +1,9 @@
+$ mkdir LabTask3
+$ mkdir Originals
+$ mkdir Links
+$ cd Originals
+$ echo "Typical Hard Stuff Garbage" >HardStuff
+$ echo "Relative Soft Stuff Garbage" >SoftStuff
+$ cd ../Links/
+$ ln ../Originals/HardStuff LinkToHardStuff
+$ ln -s ../Originals/SoftStuff RelativeToSoftStuff

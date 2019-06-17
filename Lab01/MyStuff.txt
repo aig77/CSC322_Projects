@@ -1,0 +1,20 @@
+MyStuff.txt
+Basic shell information - command then output
+
+$ id -ur
+UID=20684
+
+$ id -G
+GID=15
+
+$ id -Gn
+Groups=user
+
+$ which tcsh
+SHELL=/usr/bin/tcsh
+
+$ echo $HOME
+HOME=/home/ugrad/agal322
+
+$ echo $PATHPATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/
+local/games:/home/ugrad/agal322/bin

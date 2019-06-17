@@ -1,0 +1,14 @@
+Since we talked about pointers and arrays in class, I'd like you to write a program that allows the user to:
+
+input integers to a 3 x 3 matrix from the stdin,
+input integers to another 3 x 3 matrix from the stdin,
+multiply these matrices,
+store the product in a third matrix
+and output the result in a formatted (i.e. 3 x 3) way to the stdout.
+
+You must
+
+implement the program in C,
+using pointers to carry out the array manipulations,
+creating subfunctions for the input, multiplication and output of the matrices
+and (to make it fun) you need not use any [] when you deal with pointers to array entries (5.0%).

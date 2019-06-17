@@ -1,0 +1,14 @@
+  wc `grep -l int *` is an example of command substitution, or running a command
+  within a command. Using command1 `command2` in place of the actual commands,
+  this means that command2 will be executed and will feed the output into the
+  input of command1.
+  Using this method, the output of command2 is added as an argument to command1.
+  This is because the commands run on every individual
+  file in the directory and pull wordcounts from every file and subdirectory.
+
+  grep -l int * | wc is an example of pipelining. Using command1 | command2 in
+  place of the actual commands written, this means when command1 and command2 are
+  executed the standard outpud of command1 is fed into the standard input of
+  command2.
+  Using this method, the output of command1 is fed into the standard input of
+  command2. This is because it will run only within that directory.

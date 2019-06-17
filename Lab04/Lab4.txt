@@ -1,0 +1,29 @@
+1)
+Find a pipeline command from head to tail to grep, that will extract lines containing
+Computer Science course codes as distinct words from the 5th to 12th lines of this file.
+The "CSC" must start with an uppercase "C" but the "SC" may be written in any combination
+of uppercase and lowercase. A correct solution extracts lines numbered 5, 7, 10, and 12. Put
+the command in a file named CSCCodes.txt(1.5%)
+
+2)
+Extract the legal, Java style, int variable declarations from GrepExInts
+Put the result into a file named GrepExInts.txt (1.0%)
+
+3)
+Extract the third line of this (reGex.txt) file. Put the result into a file named grep.txt (0.5%).
+
+4)
+Kangaroos, native animals of Australia, are not known for their intelligence. In fact they're pretty stupid. Only slightly smarter than sheep, and that's not saying much. In the outback kangaroos regularly jump onto the road just when a car is coming along (especially at night, because the car headlights scare them). This makes a serious mess of your car, unless you have a "roo-bar" on the front. Sadly, many 'roos get killed in these collisions. The Royal Automobile Club of Australia needs a computer program to calculate the expected number of kills each year. This will be done for square parcels of land, each of which has roads of known length running through.
+The program needs to get the following information from the user:
+
+The length of the side of the square of land (in kilometers).
+The length of roads running through the square (in kilometers).
+The number of kangaroos living in that square.
+The calulation of the expected number of kills has two phases. First, the kangaroo density has to be calculated - this is the number of kangaroos per square kilometer. Second, the road surface area has to be calculated, using the average Australian road width which is 10 meters. These are multiplied with the well known roadkill probablility constant, which is 1.47.
+
+Here's what a sample run should look like, with the keyboard input in italics ...
+
+     Enter side of square in km  : 3.5
+     Enter roads length in km    : 10
+     Enter number of 'roos       : 150
+     Expected number of kills is : 1.8

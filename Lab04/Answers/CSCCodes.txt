@@ -1,0 +1,1 @@
+$ head -12 CSCfile.txt | tail -8 | grep "C[sS][cC][0-9][0-9][0-9][^a-zA-Z0-9]"

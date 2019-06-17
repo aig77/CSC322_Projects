@@ -1,0 +1,11 @@
+$ chmod 764 IveGotRights
+$ umask 002
+
+764 - 7 gives user read, write and execute access
+      6 gives group members read and write access
+      4 gives all others read access
+
+002 - 666 - 664 should give answer (umask works opposite to chmod)
+    6 gives user read and write access
+    6 gives group members read and write access
+    4 gives all others read access

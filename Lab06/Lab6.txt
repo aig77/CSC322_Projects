@@ -1,0 +1,21 @@
+This program already has a macro that determines whether or not an unsigned int is odd by examining the least significant binary digit. It is missing the macros for determining if the Nth least significant bit is set (counting N from the least significant bit, starting from 0), and for determining if all bits are on in a range of positions.
+
+You must add those macros (5.0%)
+
+A couple of sample runs are ...
+
+> BitOps
+Enter an integer : 31
+31 is odd
+Enter an integer and a bit number : 31 3
+31 has bit 3 on
+Enter an integer, start and end bit numbers : 31 2 4
+31 has all those bits on
+
+> BitOps
+Enter an integer : 30
+30 is even
+Enter an integer and a bit number : 30 6
+30 has bit 6 off
+Enter an integer, start and end bit numbers : 30 4 6
+30 has not all those bits on

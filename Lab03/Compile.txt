@@ -1,0 +1,7 @@
+Assuming the Ticker.c file is located in a directory called Ticker and n is an
+integer
+
+$ cd Ticker
+$ gcc -Wall -o Ticker Ticker.c
+$ chmod u+x Ticker
+$ ./Ticker n

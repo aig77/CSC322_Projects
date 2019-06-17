@@ -1,0 +1,14 @@
+Use a terminal session to:
+
+Make a directory called LabTask1 off your home directory. Do the following questions in the directory.
+Find out your
+User ID (the number)
+Primary group ID (the number)
+The names of all groups you belong to
+The absolute path of the tcsh shell
+The absolute path of your home directory
+Your PATH environment variable
+Put the answers into a text file named MyStuff.txt. (0.5%)
+Write a shell script called GetMyStuff.sh that will provide the above information (the script must be a executable, and must work regardless of which directory it is in). Also, just saying cat MyStuff.txt is not sufficient. (1.0%)
+A pipeline is the combination of at least 2 commands, where the output of command1 is the input for command2. The syntax is command1 | command2 where | is the pipeline operator. Read the man pages about the ls and wc commands. Devise a minimal pipeline command that will print the number of files and subdirectories in the current directory (including hidden ones, but not the current and parent directory entries). Put the answer into a text file named MyPipe.txt. (0.5%)
+Describe the difference between wc `grep -l int *` and grep -l int * | wc. Why is it not giving the same output? Put the answer into a text file named Explanation.txt.(1.0%)

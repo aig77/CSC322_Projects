@@ -1,0 +1,10 @@
+$ gcc Ticker.c
+$ ./a.out 5 &
+$ ./a.out 7
+$ ^Z
+$ jobs
+$ bg
+$ fg %1
+$ ^Z
+$ kill %1
+$ kill %2

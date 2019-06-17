@@ -1,0 +1,68 @@
+1)
+A naturalist is off to explore the amazon jungle, and needs a computer program to record information about all the new species discovered. For each new species it is necessary to store the name (max 128 characters), size (a real number), and the type of animal. mammal, insect, bird, or fish).
+
+Here what a sample run should look like (with the keyboard input shown in italics) ...
+
+> NewSpecies
+Enter animal information ("exit" to exit)
+What is the name : bloatfish
+What is the size : 12.47
+What is the type : fish
+Enter animal information ("exit" to exit)
+What is the name : stingybeasty
+What is the size : 0.13
+What is the type : insect
+Enter animal information ("exit" to exit)
+What is the name : toothfulsloth
+What is the size : 33.33
+What is the type : mammal
+Enter animal information ("exit" to exit)
+What is the name : exit
+
+The following new species were found:
+bloatfish            has size  12.47 and is a fish
+stingybeasty         has size   0.13 and is a insect
+toothfulsloth        has size  33.33 and is a mammal
+
+You must
+
+Implement the program in C. (3.0%)
+An array of structures must be used, so that each new species can be recorded in an element of the array.
+The type of animal is represented as an enum type, indicating one of mammal, insect, bird, or fish.
+It's not known in advance how many new species will be found, so the program must malloc for an initial array
+ of size 1, and use the doubling realloc technique (as discussed in class) to get more memory as required. You must
+ always check the return value from malloc, as done in the Malloc wrapper function (or just use Malloc :-).
+
+ 2)
+ Since we talked about pointers, memory allocation and linked lists in class, I'd like you to write a program that allows the user to:
+
+Enter the names of persons.
+For each person entered, enter the name of his/her best buddy.
+Print out the "best buddys"
+Here what a sample run should look like (with the user input shown in italics) ...
+Enter nation name : Tom
+Enter nation name : Betty
+Enter nation name : Martin
+Enter nation name : Michael
+Enter nation name : Amanda
+Enter nation name : Catharine
+Enter nation name :
+Enter best ally name for Catharine : Amanda
+Enter best ally name for Amanda : Michael
+Enter best ally name for Michael : Martin
+Enter best ally name for Martin : Betty
+Enter best ally name for Betty : Amanda
+Enter best ally name for Tom : Catharine
+The best ally of Catharine is Amanda
+The best ally of Amanda is Michael
+The best ally of Michael is Martin
+The best ally of Martin is Betty
+The best ally of Betty is Amanda
+The best ally of Tom is Catharine
+
+You must
+
+Implement the program in C. (3.0%)
+Each person's name entered must be stored in a node of a linked list.
+Each node of the linked list must contain (only) the persons name, a pointer to the node for its best buddy, and a pointer to the next node in the list.
+Before the program completes it must explicitly free the malloced memory.

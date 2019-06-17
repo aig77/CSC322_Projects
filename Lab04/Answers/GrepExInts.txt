@@ -1,0 +1,23 @@
+Grep pattern to find all proper java int variable declarations in GreExInts.txt
+Rules:
+    * Must be an int (no other variable types)
+    * int <-- must be written this way (not Int, integer, iNT, etc)
+    * indentation before variable type does not matter
+    * must have at least one space after variable type
+    * space between variable type and variable name does not matter
+    * variable must start with letter (lowercase or captial), $, or  _
+    * variable name cannot contain reserved characters (#, !, ?, etc)
+      full list in Oracle documentation
+    * commented variables are not declared (do not count)
+    * comments after a declaration are ok
+    * spacing between two variable names (seperated by comma) in one line does not
+      matter
+    * must end with a semicolon
+    * spacing between variable name(s) and semicolon does not matter
+
+Explanation: start with any number of space (remove comments), contain int
+(written this way), at least one space after, first character must be approved
+character, cannot contain resereved characters, ends with semicolon (doesn't
+have to be end of the line)
+
+$ grep "^\s*int\s\s*[a-zA-Z][^#]*;" GrepExInts.txt

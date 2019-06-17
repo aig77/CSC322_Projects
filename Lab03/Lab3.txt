@@ -1,0 +1,44 @@
+1)
+Making files and directories
+    * Make a directory called LabTask3 off your home directory (0.1%).
+    * In Originals create two files, HardStuff and SoftStuff (put any garbage in them) (0.1%).
+    * Off LabTask3, a subdirectory called Links (0.1%).
+    * In Links
+        - A hard link named LinkToHardStuff that links to HardStuff in Originals (0.1%).
+        A relative soft (symbolic link) link named RelativeToSoftStuff to SoftStuff in Originals (Hint: check the man page of the ln command) (0.1%).
+Put the commands that you used to do these (including making the directories and files) into a file named MakingLinks.txt.
+
+2)
+Create a directory called IveGotRights off LabTask3. Set its permissions to (0.2%):
+    * Read, write, and execute permission for the owner
+    * Read and write permission for the group
+    * Read permission for others using numerical codes. Furthermore, establish that newly created files will by default have (0.2%)
+    * Read and write permission for the owner
+    * Read and write permission for the group
+    * Read permission for others
+Put the commands that you used to do these into a file named Permissions.txt.
+
+3)
+Find the following files and directories:
+    * The file where your email addressed to your class account would be stored (if Irina let you receive email in your class account).
+    * The file that contains the configuration for printers available to the computer.
+    * The directory that contains libraries for security using the Pluggable Authentication Module.
+Put the full path names in a file called Eureka.txt. (1.0%)
+
+4)
+An command that lists all the files (in the current directory) that start with an alphabetic character, contain a digit, and end with a dot followed by a lowercase character then one more character. Put the command in a file named Globbing.txt(1.0%).
+
+5)
+A sequence of commands to copy ~csc322/Ticker.c to the current directory, then compile it with all warnings and output the executable to Ticker. Put the answers in a file named Compile.txt(1.0%).
+
+6)
+A series of commands that (0.5%)
+    * In one go, start Ticker 5 in the background and Ticker 7 in the foreground.
+    * Suspend Ticker 7
+    * List the jobs
+    * Activate Ticker 7 in the background
+    * Bring Ticker 5 into the foreground
+    * Suspend Ticker 5
+    * Kill Ticker 5
+    * Kill Ticker 7
+Put the answers in a file named Ticker.txt.

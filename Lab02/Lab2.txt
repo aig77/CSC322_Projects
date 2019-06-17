@@ -1,0 +1,24 @@
+1)
+Check out the command df that tells you how much disc space is avaliable on all the mounted devices. Write a shell script disk.sh (1.5%)
+that finds the line that corresponds to sda1 (HINT: read the man page of grep) (0.5%),
+extracts the percentage (HINT: check out awk and cut (0.5%),
+and returns a message if it exceeds a number that was given as an option. Check initially that the option exists (0.5%).
+
+2)
+Consider that you want to rename all files of a given type (e.g. file extension) to a different filetype. For example, you want to change the file extension of all txt files to text. Write a shell script rename.sh (3%) that:
+takes two options as arguments. The first argument is the filetype you want to change. The second argument is the filetype you want to change files into.
+check that the two arguments are actually given. If not, the script is supposed to return a error message and terminate (0.5%).
+In the next step the script needs to find the corresponding filenames. Each file that is considered needs to be checked if it is a file (0.5%) and has read and write permissions (0.5%).
+Once files are found their file extensions need to change: For example, file.txt needs to change to file.text. HINT: check the man page of the command sed (1%).
+Finally, the script needs to output something to the effect of notifying the user that file.txt has been changed to file.text (0.5%).
+
+3)
+Rewrite the following shell script in a way that it will run using the tcsh and csh programs (1.0%):
+#!/bin/bash
+DIRNAME=/usr/bin
+FILETYPE="shell script"
+LOGFILE=logfile
+file "$DIRNAME"/* | fgrep "$FILETYPE" | tee $LOGFILE | wc -l
+exit 0
+
+Put the script in a file named rewrite.sh.

@@ -1,0 +1,3 @@
+Search for line that starts with whitespace (regex: "^ ") within file regEx.txt
+
+$ grep "^ " regEx.txt

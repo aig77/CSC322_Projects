@@ -1,0 +1,35 @@
+It's so common to hear people start sentences with "I am" (as opposed to René Descartes, who is famous for ending a sentence like that). The Department of Sociology might be interested in a study of the qualities that people believe they possess. With the careful use of hidden microphones and NUANCE's NaturallySpeaking software, it has been possible to obtain transcripts of several conversations. Let's see what people think of themselves ...
+
+Write a program (6.0%) that:
+
+Opens a file called MyQualities.txt for writing.
+Repeatedly ...
+Reads a sentence from the keyboard (using fgets).
+Checks if the sentences starts with "I am " (using strstr)
+If it does, then extracts the substring starting at the 5th character, i.e., the substring containing the quality the person believes they possess. (using strncpy).
+Concatenates the substring onto a growing string containing all such qualities, with a comma separator (using strncat - the growing string has a maximal length of 1024 characters).
+Appends the substring to the MyQualities.txt file.
+Stops looping when a string containing just a "." is entered (check using strcmp).
+Outputs the grown string of qualities to the screen.
+Opens the MyQualities.txt file for reading
+Reads and echo the qualities from the file
+Deletes the file
+
+Here's what a sample run should look like (with the keyboard input shown in italics) ...
+
+Please enter sentences, . to end.
+Hello everyone
+I am very clever
+Most people are not
+I am good looking too
+I am really good looking
+You are ugly
+I am confident
+.
+The qualities are very clever, good looking too, really good looking, confident.
+
+Confirming the saved qualities ...
+    very clever
+    good looking too
+    really good looking
+    confident

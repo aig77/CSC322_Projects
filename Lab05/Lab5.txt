@@ -1,0 +1,68 @@
+1)
+Scuba divers on shallow dives (up to about 90') put normal air in their tanks. For deeper dives divers use Nitrox (also known as EANx). Air has about 21% oxygen and 79% nitrogen, while Nitrox varies from 21% oxygen and 79% nitrogen through to 40% oxygen and 60% nitrogen. Using Nitrox allows you to stay down deeper for longer. However, when using Nitrox you have to take care not to use a mixture that is too strong, i.e., with a too high percentage of oxygen. This check is done using some simple mathematics:
+    * Find out how deep the dive will be, in feet.
+    * Decide on a mixture, i.e., the percentage of oxygen in the gas.
+    * Compute the ambient pressure for the dive. To do this you need to know the "feet per atmosphere" constant, which for ocean diving is 33. The ambient pressure is then the depth divided by the "feet per atmosphere" constant, plus 1.
+    * Compute the partial pressure of oxygen for the dive, equal to the fraction of oxygen (percentage divided by 100) in the gas multiplied by the ambient pressure. The recommended maximal partial pressure of oxygen is 1.4, and the contingency maximal partial pressure of oxygen is 1.6. If the computed partial pressure of oxygen for the dive exceeds these, I know the mixture is too strong.
+    * Additionally, compute an "oxygen pressure group". The oxygen pressure group is an uppercase letter representing the partial pressure of oxygen for the dive:
+        - 'A' represents a partial pressure of oxygen from 0.0 to less than 0.1,
+        - 'B' represents a partial pressure of oxygen from 0.1 to less than 0.2,
+        - 'C' represents a partial pressure of oxygen from 0.2 to less than 0.3, etc.
+    If the oxygen pressure group is 'N' the diver is close to the oxygen pressure limit of 1.4, and if it's a letter after 'N' the diver knows that the mixture is too strong.
+
+I'd like you to write a computer program to do these calculations:
+    * You'll have to get the depth and percentage oxygen in the gas as keyboard input - both will be integers.
+    * The output must provide the ambient pressure for the dive, the partial pressure of oxygen for the dive, and the oxygen pressure group.
+    * Additionally, it must output true/false status values indicating whether or not the dive will exceed the recommended maximal and contingency maximal values for partial pressure of oxygen.
+Here is what a sample run should look like (with the keyboard input shown in italics):
+     Enter depth and percentage O2   : 99 36
+
+     Ambient pressure                : 4.0
+     O2 pressure                     : 1.44
+     O2 group                        : O
+
+
+     Exceeds maximal O2 pressure     : true
+     Exceeds contingency O2 pressure : false
+
+You must
+Implement the program in C and put into a file named O2.c (2.5%).
+The program should use extra functions appropriately. HINT: In some cases you may need
+variable type conversions (that we haven't yet really covered). Such conversions can be forced
+by (<type>) <expression> . For example an integer variable that was declared like int t can be
+type cast to a float by (float) t or a character by (char) t.
+
+2)
+Tax time! Let's assume that we have a much simpler tax code (than the IRS currently has), so that we can calculate taxes easily:
+    * The tax payer is repeatedly prompted to enter either an amount of income (a positive value) or an amount of deduction (a negative value). This continues until a zero value is entered. The positive values are summed to form the income, and the negative values are summed to form the deduction.
+    * The taxable income is computed as the income less the deduction, except in the case that the deduction is greater than than the income in which case the taxable income is zero.
+    * A tax group is calculated from the taxable income:
+        - Greater or equal to $500000 = Super rich
+        - Greater or equal to $200000 = Quite rich
+        - Greater or equal to $100000 = Miami poor
+        - Greater or equal to $50000 = Average
+        - Greater or equal to $20000 = Realistic
+        - Less than $20000 = Poor
+        The tax group is saved as an uppercase letter, one of S, Q, M, A, R, P.
+        * The tax is computed using one of three rates:
+        - The super rich and quite rich get taxed at the high rate of 25%.
+        - The Miami poor get taxed at the medium rate of 10%.
+        - The average and realistic get taxed at the low rate of 3%.
+        - The poor pay no tax.
+        Additionally, the maximal tax is $50000 (This part is optional).
+        The tax information is displayed.
+        
+Here is what a sample run should look like (with the keyboard input shown in italics) ...
+Enter next amount : 125000
+Enter next amount : -250
+Enter next amount : -3000
+Enter next amount : 15000
+Enter next amount : 88000
+Enter next amount : -200
+Enter next amount : 0
+
+Income         = $228000.00
+Deductions     = $  3450.00
+Taxable Income = $224550.00
+Tax group      = Q
+Tax owed       = $ 50000.00

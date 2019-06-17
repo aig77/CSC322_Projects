@@ -1,0 +1,49 @@
+d The are many different ways to sort data. For some applications, e.g., making movies, it is better to sort pointers to the data, rather than sort the data itself. You must write a program to demonstrate this kind of activity. The program must ...
+
+Define data types for ... (0.5%)
+A pointer to an integer
+An array of five integers
+An array of five pointers to integers
+Have an intialization function that ... (0.5%)
+Initializes the elements of an array of five integers to random integers. Use rand to generate the random integers, using srand with the return from getpid to seed the random number generation.
+Initializes the elements of an array of five pointers to integers to point to the corresponding elements of the array of integers. (The structure is anaolgous to the one created in this example that we discussed in class.)
+Have a function that prints an array of five integers. (0.5%)
+Have a function that prints the integers pointed to by an array of five pointers to integers. (1%)
+Have a function that uses a bubble-sort to sort an array of five integers, in ascending order of the integers. (1%)
+And to make it fun, this function may not contain any [ or ] characters. (You may want to implement it with []s first, and then work out how to remove them later :-).
+Have a function that uses a bubble-sort to sort an array of five pointers to integers, in ascending order of the integers pointed to by the pointers (i.e., do not sort the integer array - sort the array of pointers so that when you print it, the integers come out in ascending order). (0.5%)
+Have a main function that ... (1%)
+Declares an array of five integers and an array of five pointers to integers.
+Initializes the arrays (as described above).
+Prints the array of integers.
+Sorts the array of pointers (as described above).
+Prints the integers pointed to by the array of pointers.
+Sorts the array of integers.
+Prints the array of integers.
+Prints the integers pointed to by the array of pointers.
+The output from a sample run should look like this. The picture on the right shows the array of integers and array of pointers after intialization, sorting the array of pointers, and sorting the array of integers.
+
+---- Initialized array of integers ----
+ 0 :  958486403
+ 1 : 1006139074
+ 2 :  893180240
+ 3 :  769601150
+ 4 :  392522169
+---- Sorted array of pointers ----
+ 0 :  392522169
+ 1 :  769601150
+ 2 :  893180240
+ 3 :  958486403
+ 4 : 1006139074
+---- Sorted array of integers ----
+ 0 :  392522169
+ 1 :  769601150
+ 2 :  893180240
+ 3 :  958486403
+ 4 : 1006139074
+---- Array of pointers ----
+ 0 : 1006139074
+ 1 :  958486403
+ 2 :  893180240
+ 3 :  392522169
+ 4 :  769601150

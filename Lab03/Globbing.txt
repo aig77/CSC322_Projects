@@ -1,0 +1,4 @@
+A command that lists all the files (in the current directory) that start with anal    phabetic character, contain a digit, and end with a dot followed by a
+lowercase character then one more character
+
+$ ls | egrep "^[a-zA-Z]+.*[0-9]+.*\.[a-z].$"

@@ -1,0 +1,3 @@
+/var/spool/mail/agal322
+/etc/printcap
+/lib/security
